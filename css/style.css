@@ -1,0 +1,646 @@
+/* *************************
+GENERALITIES
+************************* */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+@font-face {
+    font-family: "Bitter";
+    src: url('./../fonts/Bitter/static/Bitter-Regular.ttf') format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Bitter";
+    src: url('./../fonts/Bitter/static/Bitter-Italic.ttf') format("truetype");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Bitter";
+    src: url('./../fonts/Bitter/static/Bitter-Bold.ttf') format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Bitter", serif;
+}
+
+.wraper {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+:root {
+    --main-blue-color: #026892;
+    --main-border-color: #d8dee9;
+    --main-grey-color: #566074;
+    --main-color-text: #fff;
+}
+
+.noJS {
+    text-align: center;
+    font-size: 1.8rem;
+    color: var(--main-blue-color);
+}
+
+/* *************************
+HEADER
+************************* */
+
+header {
+    width: 100%;
+    text-align: center;
+    background-color: var(--main-blue-color);
+    color: var(--main-color-text);
+}
+
+header img {
+    display: block;
+    width: 10rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header a {
+    padding: 1rem;
+    border-bottom: 2px solid var(--main-blue-color);
+    border-left: 2px solid var(--main-blue-color);
+    text-decoration: none;
+    color: var(--main-color-text);
+    transition: all 0.7s;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    margin: 1rem;
+    padding-bottom: 1rem;
+}
+
+header nav a:first-child:hover {
+    border-bottom: 2px solid var(--main-blue-color);
+    border-left: 2px solid var(--main-blue-color);
+}
+
+header nav a:hover {
+    border-bottom: 2px solid var(--main-border-color);
+    border-left: 2px solid var(--main-border-color);
+    color: var(--main-color-text);
+}
+
+.active {
+    font-weight: bold;
+}
+
+.bg-img {
+    height: 300px;
+    background-image: url("../img/bandeau.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+/* *************************
+MAIN
+************************* */
+
+h1 {
+    text-align: center;
+    font-size: 3.5rem;
+    color: var(--main-blue-color);
+}
+
+h2 {
+    font-style: italic;
+    color: var(--main-grey-color);
+}
+
+article {
+    margin-bottom: 2rem;
+}
+
+p {
+    margin-top:0;
+}
+
+.relative p {
+    text-align: justify;
+}
+
+.overflow {
+    overflow: auto;
+}
+
+.img-left {
+    float: left;
+    margin-right: 1rem;
+    max-width: 18rem;
+}
+
+.fb {
+    width: 400px;
+    height: 520px;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+.paiement {
+    max-width: 16rem;
+}
+
+.assurance {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+span {
+    color: red;
+}
+
+.hide {
+    visibility: hidden;
+}
+
+.erreur404 {
+    display: block;
+    text-align: center;
+    font-size: 10rem;
+    color: var(--main-blue-color);
+}
+
+/* *************************
+GALLERY
+************************* */
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery img {
+    display: block;
+    object-fit: cover;
+    width: 240px;
+    height: 350px;
+    padding: 2rem;
+}
+
+/* **********************
+FORM
+********************** */
+
+fieldset {
+    border: 1px solid var(--main-blue-color);
+}
+
+label {
+    font-style: italic;
+    color: var(--main-grey-color);
+}
+
+form .col {
+    width: 90%;
+    margin: 5%;
+}
+
+.inputFlex {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputRow {
+    display: flex;
+}
+
+textarea {
+    min-height: 15rem;
+    margin-top: 1rem;
+}
+
+.contact input {
+    margin-top: 1.4rem;
+    padding: 0.8rem;
+}
+
+.contact input,
+textarea {
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.inputRow input {
+    width: auto;
+    margin-top: 0;
+}
+
+.contact select {
+    width: 100%;
+    margin: 0 0 0.5rem 0;
+}
+
+form .text {
+    margin-top: 2rem;
+}
+
+form .submit {
+    display: flex;
+    justify-content: center;
+}
+
+form .button {
+    display: inline-block;
+    cursor: pointer;
+    padding: 0.7rem 1.2rem 0.4rem;
+    border-radius: 5px;
+    text-align: center;
+    background-color: var(--main-blue-color);
+    color: var(--main-color-text);
+    transition: all 1s;
+    cursor: pointer;
+}
+
+form .button:hover {
+    transform: scale(1.2);
+    background-color: rgba(2, 104, 146, 0.7);
+}
+
+.returnMessage {
+    text-align: center;
+    color: var(--main-blue-color);
+}
+
+.returnErrorMessage {
+    text-align: center;
+    color: red;
+}
+
+/* **********************
+COMMENTS
+********************** */
+
+.client {
+    font-weight: bold;
+}
+
+.date {
+    font-style: italic;
+    font-size: 1.5rem;
+}
+
+.com-client {
+    padding: 2rem;
+    margin-top: 1rem;
+    border: 1px solid var(--main-blue-color);
+}
+
+.commentaires input {
+    width:100%;
+}
+
+.commentaires div:first-child {
+    margin-bottom: 0;
+}
+
+.commentaires div:nth-child(2) {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+.com-client:last-child {
+    margin-bottom: 1rem;
+}
+
+/* *************************
+AUTH
+************************* */
+
+.index {
+    display: block;
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bold;
+    color: var(--main-blue-color);
+}
+
+.login .inputFlex {
+    margin-bottom: 2rem;
+}
+
+/* *************************
+ADMINISTRATEUR
+************************* */
+
+.admin {
+    padding: 1.5rem;
+    text-align: center;
+    color: var(--main-color-text);
+    background-color: var(--main-blue-color);
+}
+
+.adminflex form:first-child .submit {
+    width: 10rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.adminflex h3,
+.inputFlex h3 {
+    text-align: center;
+    color: var(--main-grey-color);
+}
+
+.deleteForm input {
+    margin-bottom: 1rem;
+}
+
+.deleteForm .centerButton {
+    display: block;
+    margin: auto;
+}
+
+hr {
+    border: 1px dashed rgba(2, 104, 146, 0.4);
+}
+
+hr:first-child {
+    border: 0;
+}
+
+.actions {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0.5rem;
+    border-bottom: 1px dashed rgba(2, 104, 146, 0.4);
+}
+
+.actions:last-child {
+        border-bottom: 0;
+}
+
+.actions li {
+    flex: 1;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    list-style: none;
+}
+
+.invoicePrint {
+    border: 1px solid var(--main-blue-color);
+    margin: 2rem 0 2rem 0;
+}
+
+.invoicePrint p:nth-child(4){
+    padding-bottom:3rem;
+    text-align: right;
+}
+
+.total p:first-child {
+    padding-top: 3rem;
+}
+
+.resultCustInvoices {
+    margin: 0 0 2rem 2rem;
+}
+
+.result {
+    min-height: 4rem;
+    padding-left: 2.2rem;
+}
+
+.resultInvoices {
+    min-height: 4rem;
+    margin-top: 2rem;
+    padding: 2rem;
+}
+
+.invoice {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+}
+
+.invoice li {
+    flex: 1;
+    padding-right: 1rem;
+    text-align: end;
+    list-style: none;
+}
+
+.invoice li:first-child {
+    flex: 4;
+    text-align: left;
+}
+
+.invoice li:last-child {
+    padding-right: 0;
+    font-weight: bold;
+}
+
+.total {
+    text-align: end;
+}
+
+.logoutNoJS {
+    display: flex;
+    justify-content: center;
+}
+
+/* *************************
+MENTIONS LEGALES
+************************* */
+
+.mentions {
+    text-align: justify;
+}
+
+
+/* *************************
+FOOTER
+************************* */
+
+footer {
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+    background-color: var(--main-blue-color);
+    color: var(--main-color-text);
+}
+
+footer a {
+    padding: 1rem;
+    text-decoration: none;
+    color: var(--main-color-text);
+}
+
+#footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.droits {
+    display: flex;
+    flex-direction: column;
+}
+
+.social {
+    display: flex;
+}
+
+.link {
+    margin: 2rem 0 2rem 0;
+    text-align: center;
+}
+
+.connexion {
+    text-decoration: underline;
+}
+
+.fixed {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+
+/* *************************
+****************************
+RESPONSIVE DESIGN
+****************************
+************************* */
+
+@media screen and (min-width:780px) {
+    .wraper {
+        max-width: 650px;
+    }
+    .fb {
+        margin-top: 6rem;
+    }
+    /* realisations */
+    .gallery img {
+        width: 320px;
+        height: 465px;
+    }
+    /* administrateur */
+    .resultCustInvoices {
+        margin: 0 0 2rem 3rem;
+    }
+}
+
+@media screen and (min-width:980px) {
+    .wraper {
+        max-width: 850px;
+    }
+    header {
+        padding-top: 2rem;
+    }
+    header nav {
+        justify-content: space-around;
+        flex-direction: row;
+        align-items: center;
+    }
+    .fb {
+        margin-top: 10rem;
+    }
+    #footer {
+        justify-content: space-evenly;
+    }
+    .droits {
+        flex-direction: row;
+    }
+    footer div a:first-child,
+    footer div p:first-child {
+        padding-right: 6rem;
+    }
+    .link a:nth-child(2) {
+        margin-right: 4rem;
+    }
+    /*administrateur*/
+    .adminflex {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: end;
+    }
+    .result {
+        padding-left: 1.2rem;
+    }
+    .accountFlex {
+        display: flex;
+    }
+    .accountFlex div .col:first-child {
+        margin-top:0;
+    }
+    .resultCustInvoices {
+        margin: 0 0 2rem 4rem;
+    }
+}
+
+@media screen and (min-width:1100px) {
+    .wraper {
+        max-width: 950px;
+    }
+    .img-left {
+    max-width: 25rem;
+    margin-right: 2rem;
+    }
+    .accueil {
+        max-width: 530px;
+    }
+    .relative {
+        position: relative;
+    }
+    .fb {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-top: 0;
+    }
+    /* contact */
+    .flexform {
+        display: flex;
+    }
+    .contact .text {
+        margin-top: 0;
+    }
+    .contact .col {
+        margin: 2%;
+    }
+    .contact textarea {
+        min-height: 21rem;
+    }
+    /* commentaires */
+    .commentaires textarea {
+        min-height: 15rem;
+    }
+    .col {
+        width: 48%;
+        margin: 2%;
+    }
+    /* realisations */
+    .gallery img {
+        width:300px;
+        height: 432px;
+    }
+    /* administrateur */
+    .editInvoice .resultInvoices {
+        margin-left: 5rem;
+    }
+    .resultCustInvoices {
+        margin: 0 0 2rem 5rem;
+    }
+}
