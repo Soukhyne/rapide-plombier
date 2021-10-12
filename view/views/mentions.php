@@ -18,7 +18,7 @@
                 <p>Conformément aux dispositions des articles 6-III et 19 de la Loi n° 2004-575 du 21 juin 2004 pour la Confiance dans l'économie numérique, dite L.C.E.N., nous portons à la connaissance des utilisateurs et visiteurs du site : rapide-plombier.fr les informations suivantes :</p>
                 <h2>Informations légales</h2>
                 <p>Statut du propriétaire : particulier</p>
-                <p>Propriétaire, créateur, responsable de publication, webmaster : Madeline LAFONT - 34170 Castelnau-le-Lez - madeline.lafont@gmail.com</p>
+                <p>Propriétaire, créateur, responsable de publication, webmaster : Madeline LAFONT</p>
                 <p>Le responsable de la publication est une personne physique</p>
                 <p>Hébergeur : XXXXXX ADRESSE</p>
                 <h2>Accessibilité</h2>
